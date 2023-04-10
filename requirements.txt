@@ -1,9 +1,10 @@
+--upgrade pip
 Flask
 gunicorn
 joblib
 nltk
 numpy
-tensorflow==1.15.0
+tensorflow
 tflearn
 app
 
