@@ -90,6 +90,50 @@
       .box {
         border: 2px solid black;
       }
+        .footer {
+  background-color: #323f43;
+  padding: 40px 0;
+  margin-top: 50px;
+  border-top: 4px solid black;
+  color: white;
+  font-size: 12px;
+}
+
+.footer__content {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer .left {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .right {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.footer__item {
+  margin-bottom: 5px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer__item:hover {
+  text-decoration: underline;
+}
     </style>
     
 </head>
@@ -138,5 +182,23 @@
           }
         });
 </script>
+      <footer class="footer">
+    <div class="footer__content">
+      <section class="left">
+        <a class="footer__item">Made by Jose Salvatierra</a>
+        <a class="footer__item">Check out my other projects</a>
+      </section>
+      <section class="right">
+        <div class="footer__column">
+          <a class="footer__item">Recent</a>
+          <a class="footer__item">Calendar</a>
+        </div>
+        <div class="footer__column">
+          <a class="footer__item" href="#">About</a>
+          <a class="footer__item">How this was made</a>
+        </div>
+      </section>
+    </div>
+  </footer>
   </body>
   </html>
