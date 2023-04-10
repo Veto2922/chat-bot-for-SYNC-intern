@@ -71,7 +71,7 @@ except:
     with open("data.pickle", "wb") as f:
         pickle.dump((words, labels, training, output), f)
 
-tf.reset_default_graph()
+# tf.reset_default_graph()
 
 net = tflearn.input_data(shape=[None, len(training[0])])
 net = tflearn.fully_connected(net, 8)
