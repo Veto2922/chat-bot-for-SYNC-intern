@@ -7,5 +7,6 @@ tensorflow
 tflearn
 app
 waitress
+tensorflow-cpu
 
 
