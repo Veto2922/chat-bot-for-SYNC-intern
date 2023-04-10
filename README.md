@@ -1,4 +1,4 @@
-# chat-bot-for-SYNC-intern
+# chat-bot-for-SYNC-intern using Flask
 
 This is sample chatbot using deep learning by tensorflow and flask app.
 
