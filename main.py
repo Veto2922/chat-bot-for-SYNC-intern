@@ -82,7 +82,11 @@ net = tflearn.regression(net)
 model = tflearn.DNN(net)
 
 
-model.load(r"model.tflearn")
+try:
+    model.load(r"model.tflearn")
+except:
+    model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
+    model.save("model.tflearn")
 
 def bag_of_words(s, words):
     bag = [0 for _ in range(len(words))]
@@ -125,7 +129,7 @@ def home():
 @app.route('/get/')
 def get_bot_response():
     user_input = request.args.get('msg')
-    return str(process(user_input))
+    return user_input
 
 if __name__ == '__main__':
     app.run(debug= True , port= 8080)
