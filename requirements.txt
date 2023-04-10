@@ -6,5 +6,6 @@ numpy
 tensorflow
 tflearn
 app
+waitress
 
 
